@@ -1,0 +1,76 @@
+{
+    "title": "Events Scraper input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "locations": {
+            "title": "Cities",
+            "type": "array",
+            "description": "Cities or areas to search, up to 10 per run. Add the country or state when the name is common, e.g. \"Portland, Oregon\" or \"Manchester, UK\". Empty runs the example (New York).",
+            "editor": "stringList",
+            "prefill": ["New York", "London"],
+            "default": ["New York"]
+        },
+        "keyword": {
+            "title": "Keyword (optional)",
+            "type": "string",
+            "description": "Only events about this, e.g. \"tech\", \"jazz\" or \"startup\". Eventbrite and Meetup search for it themselves; Luma's city pages have no search, so Luma events are kept when every word starts a word in the title, organizer or host names. Up to 80 characters.",
+            "editor": "textfield",
+            "prefill": "tech"
+        },
+        "sources": {
+            "title": "Sites",
+            "type": "array",
+            "description": "Which sites to read. Leave all three for the widest list; the same event listed on two sites is merged into one row.",
+            "editor": "select",
+            "items": {
+                "type": "string",
+                "enum": ["eventbrite", "meetup", "luma"],
+                "enumTitles": ["Eventbrite", "Meetup", "Luma"]
+            },
+            "default": ["eventbrite", "meetup", "luma"]
+        },
+        "maxEventsPerSource": {
+            "title": "Max events per site per city",
+            "type": "integer",
+            "description": "How many events to read from each site for each city, from 1 to 200. Eventbrite has 20 a page; Meetup's search shows about 20 to 30 and Luma's city pages about 20, so more than that only adds Eventbrite events.",
+            "minimum": 1,
+            "maximum": 200,
+            "default": 40
+        },
+        "dateFrom": {
+            "title": "From date (optional)",
+            "type": "string",
+            "description": "Only events that are still on from this date (YYYY-MM-DD).",
+            "editor": "datepicker",
+            "dateType": "absolute"
+        },
+        "dateTo": {
+            "title": "To date (optional)",
+            "type": "string",
+            "description": "Only events that start on or before this date (YYYY-MM-DD).",
+            "editor": "datepicker",
+            "dateType": "absolute"
+        },
+        "includeOnlineEvents": {
+            "title": "Include online events",
+            "type": "boolean",
+            "description": "City searches can include online-only events. Off keeps only in-person and hybrid events.",
+            "default": false
+        },
+        "onlyNew": {
+            "title": "Only events not returned before",
+            "type": "boolean",
+            "description": "For scheduled runs: skip events earlier runs already returned, so each run brings only new ones. Skipped events aren't charged. The list is kept in a named key-value store in your account.",
+            "default": false,
+            "sectionCaption": "Scheduled runs"
+        },
+        "seenListName": {
+            "title": "\"Already returned\" list name",
+            "type": "string",
+            "description": "Give each schedule or client its own list so their events don't hide each other's. 3 to 63 characters: lowercase letters, digits and hyphens.",
+            "editor": "textfield",
+            "default": "events-scraper-seen"
+        }
+    }
+}

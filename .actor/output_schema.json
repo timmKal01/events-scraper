@@ -1,0 +1,12 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of Events Scraper",
+    "description": "Events are pushed to the default dataset, one row per event.",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Events",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "events-scraper",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Upcoming events by city from Eventbrite, Meetup and Luma in one format, deduplicated across sites, with an only-new mode for scheduled runs.",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.7.2"
+    },
+    "scripts": {
+        "start": "node src/main.js",
+        "test": "node --test"
+    }
+}

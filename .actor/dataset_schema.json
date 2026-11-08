@@ -1,0 +1,44 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Events",
+            "transformation": {
+                "fields": [
+                    "title",
+                    "startDate",
+                    "source",
+                    "venueName",
+                    "city",
+                    "organizer",
+                    "isFree",
+                    "price",
+                    "currency",
+                    "attendees",
+                    "url",
+                    "alsoListedOn",
+                    "rowType"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "title": { "label": "Event", "format": "text" },
+                    "startDate": { "label": "Starts (local time)", "format": "text" },
+                    "source": { "label": "Site", "format": "text" },
+                    "venueName": { "label": "Venue", "format": "text" },
+                    "city": { "label": "City", "format": "text" },
+                    "organizer": { "label": "Organizer", "format": "text" },
+                    "isFree": { "label": "Free", "format": "boolean" },
+                    "price": { "label": "Price", "format": "number" },
+                    "currency": { "label": "Currency", "format": "text" },
+                    "attendees": { "label": "Going", "format": "number" },
+                    "url": { "label": "Link", "format": "link" },
+                    "alsoListedOn": { "label": "Also listed on", "format": "array" },
+                    "rowType": { "label": "Row", "format": "text" }
+                }
+            }
+        }
+    }
+}

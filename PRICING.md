@@ -19,7 +19,10 @@ I had proposed $0.002. The user chose $0.02. A cut can take effect within about 
 | filip_cicvarek/meetup-scraper | 80 | $0.001 |
 | zen-studio/10times-events-scraper | 95 | $0.0035 |
 
-One run reads all three sites and merges duplicates, which none of them do.
+None of those four reads more than one site. Two others do, found after launch (2026-11-09): memo23/eventbrite-scraper
+("Eventbrite, Lu.ma & Meetup [$0.99] Events + Organizer Leads", 40 users a month) charges $0.025 a run plus $0.00099 an
+event, and seemuapps/eventbrite-meetup-events-scraper (1 user) covers Eventbrite and Meetup. At $0.02 an event this
+actor is about 20 times memo23's price per event.
 
 ## Cost to run
 

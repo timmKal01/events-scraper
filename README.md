@@ -1,4 +1,4 @@
-# Events Scraper: Eventbrite, Meetup & Luma by City
+# Eventbrite, Meetup & Luma Events Scraper by City
 
 For event listing sites, local newsletters, community managers and sales teams: get upcoming events in any city from Eventbrite, Meetup and Luma in one clean format, with the same event merged when it's listed on more than one site, and an only-new mode for scheduled runs.
 

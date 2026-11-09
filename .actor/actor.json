@@ -2,7 +2,7 @@
     "actorSpecification": 1,
     "name": "events-scraper",
     "title": "Eventbrite, Meetup & Luma Events Scraper by City",
-    "description": "Eventbrite, Meetup and Luma events in any city, in one clean format: dates with time zones, venue and address, organizer, price, attendees. Duplicates across sites are merged. Filter by keyword and dates, or schedule it to get only new events.",
+    "description": "Upcoming events in any city from Eventbrite, Meetup and Luma, in one clean format: dates with time zones, venue and address, organizer, price, attendees. Duplicates across sites are merged. Filter by keyword and dates, or schedule it to get only new events.",
     "version": "0.1",
     "meta": {
         "templateId": "custom-no-proxy"

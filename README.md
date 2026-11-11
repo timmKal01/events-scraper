@@ -111,7 +111,7 @@ When a site matches a place to somewhere else (for example a small town it doesn
 
 ## Related tools
 
-- [Google Maps Leads](https://apify.com/m_ctim/local-business-leads): local businesses with phones, emails and websites, for venues and sponsors near your events
+- [Website Gap Finder](https://apify.com/m_ctim/website-gap-finder): local businesses from Google Maps with phones, emails and websites, for venues and sponsors near your events
 - [Blog & RSS Feed Monitor](https://apify.com/m_ctim/rss-feed-tracker): new posts from any feed, for organizers and venues that publish their events by RSS
 
 ## Notes
